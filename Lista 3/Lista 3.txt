@@ -1,0 +1,13 @@
+1) Crie um programa que leia dois números positivos n1 e n2, ambos maiores que 1, e que imprima os números ímpares não primos entre esses dois números, incluindo os próprios n1 e n2. Não assuma que n1 < n2. Se for ao contrário, troque os valores de n1 com n2.
+
+2) Escreva um programa que receba um número N para gerar os N primeiros termos da série de Fibonacci: 1, 1, 2, 3, 5, 8, 13, …
+
+3) Um número inteiro positivo,n, é dito triangular se, e somente se, ele é o resultado do produto de três números inteiros positivos e consecutivos. Escreva um algoritmo que leia um número inteiro positivo, n, e escreva como saída “é triangular” se n for triangular e “não é triangular”, caso contrário.
+
+4) Faça um programa que leia dois números n1 e n2, onde 1 <= n1 <= n2 <= 10, e que imprima a tabuada dos números entre n1 e n2, conforme exemplo.
+
+Exemplo (os ... é uma abreviação, mas deve ser completado)
+
+5) Crie um programa que leia um número N (0 < N < 10) e que imprima uma sequência de números conforme mostrado no exemplo:
+
+6) Escreva um programa que peça ao usuário dois números inteiros n1 e n2 (n2 > n1) e imprima quantos números primos existem no intervalo [n1, n2], incluindo esses dois números. Lembre-se que um número é primo se ele é divisível apenas por 1 e por ele mesmo.

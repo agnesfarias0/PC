@@ -1,0 +1,32 @@
+1) Escreva um programa que lê do usuário 3 números e imprime quem é o maior, quem é o menor e quem é o do 'meio'. Veja que existem diferentes casos a considerar: (1) três números iguais, (2) três números diferentes, (3) dois números iguais. Para cada um dos casos seu programa deve imprimir a saída de acordo com os exemplos que seguem:
+
+2) A ordem lexicográfica é a ordem das palavras usada em um dicionário, por exemplo, o verbo "ser" vem antes da palavra "seres", na ordem lexicográfica. Embora possa parecer que tem algo a ver com o tamanho da palavra, a palavra "testando" viria antes da palavra "testes" na ordem lexicográfica.
+
+Na linguagem python, podemos testar se uma plavra vem antes da outra de acordo com a ordem lexicográfica usando os operadores ">" ou "<". Dessa forma sejam as palavras A e B, se A < B, a vem antes de B; de forma análoga, se A > B, B vem antes de A. Obs: para comparações da ordem lexicográfica, considere os textos todos minúsculos!
+
+Assim escreva um programa que lê três textos do usuário e os imprime na ordem lexicográfica de acordo com os exemplos abaixo:
+
+3) Escreva um programa que pede ao usuário um número de dias e converte esse número em semanas e dias. Observe que existem muitos casos específicos a serem tratados, uma vez que faz diferença dizer "dia" ou "dias", bem como "semana" ou "semanas", por exemplo:
+
+Se o usuário digitar 0, o programa deve exibir: 0 dias equivale à nenhum dia.
+Se o usuário digitar 7, o programa deve exibir: 7 dias equivalem à 1 semana!
+Se o usuário digitar 8, o programa deve exibir: 8 dias equivalem à 1 semana e 1 dia!
+Se o usuário digitar 30, o programa deve exibir: 30 dias equivalem à 4 semanas e 2 dias!
+
+4) Escreva um programa que pede ao usuário um texto e dois números inteiros i1 e i2. Após lidas as entradas o programa faz as seguintes verificações:
+
+Se i1 > i2 troque os valores de i1 e i2
+Se i1 ou i2 forem maiores ou iguais ao tamanho do texto lido, finalize o programa avisando ao usuário que os valores tem que ser menores do que o tamanho do texto.
+Após feitas as verificações, o programa deverá imprimir partes do texto conforme as especificações abaixo:
+
+Parte 1: equivale à parte do texto que vai da primeira letra até o índice i1
+Parte 2: equivale à parte do texto que vai da primeira letra até o índice i2
+Parte 3: equivale à parte do texto que vai da letra de índice i1 letra até o índice i2
+Parte 4: equivale à parte do texto que vai da letra de índice i1 até o final do texto
+Parte 5: equivale à parte do texto que vai da letra de índice i2 até o final do texto
+
+5) Em uma competição de ginástica, cada atleta recebe votos de sete jurados. A melhor e a pior nota são eliminadas. A sua nota fica sendo a média dos votos restantes. Você deve fazer um programa que receba o nome do ginasta e as notas dos sete jurados alcançadas pelo atleta em sua apresentação e depois informe a sua média, conforme a descrição acima informada (retirar o melhor e o pior salto e depois calcular a média com as notas restantes). As notas não são informados ordenadas. Um exemplo de saída do programa deve ser conforme o exemplo abaixo:
+
+6) Escreva um programa que leia dois números e que pergunte qual operação você deseja realizar.
+Você deve poder calcular soma (+), subtração (-), multiplicação (*) e divisão (/). Exiba o
+resultado da operação solicitada.

@@ -1,0 +1,97 @@
+1) Escreva um programa que faça a criptografia de uma palavra, da seguinte forma:
+Letras de "a" até "e" - 1
+Letras de "f" até "j" - 2
+Letras de "k" até "o" - 3
+Letras de "p" até "z" - 4
+Espaço ou qualquer outro caracter - 5
+O programa deve ter uma função que recebe, como parâmetro de entrada, uma palavra e retorne o valor encriptado correspondente. Seu programa deve realizar a leitura do texto fora da função e usá-la bem como seu retorno para imprimir a saída como os exemplos mostram.
+
+2) O código abaixo é um código usado em um Caixa Eletrônico:
+
+saldo = 1000
+while True: #loop principal
+print('Qual operacao voce deseja realizar?')
+print('1 - SAQUE')
+print('2 - DEPOSITO')
+print('3 - SALDO')
+print('4 - SAIR')
+opcao = int(input('Escolha:'))
+if opcao == 1: #funcionalidade saque
+valor_sacado = float(input('Qual valor você deseja sacar?'))
+if valor_sacado <= saldo:
+saldo = saldo - valor_sacado
+print('Saque autorizado.' + 'Agora o seu saldo atual é de: ' + str(saldo) )
+else:
+print('Saldo insuficiente.')
+elif opcao == 2: #funcionalidade deposito
+valor_deposito = float( input('Qual o valor que você quer depositar?') )
+if valor_deposito > 0:
+saldo = saldo + valor_deposito
+print(str('O seu saldo agora é de: ') + str(saldo) )
+else:
+print('Valor inválido')
+elif opcao == 3: #funcionalidade saldo
+print(str('O seu saldo atual é de: ') + str(saldo))
+elif opcao == 4: #sair
+print('Obrigado por usar os serviços do Caixa Eletrônico')
+break
+else :
+print('Opção inválida, tente novamente!')
+
+O engenheiro de Software pediu para organizarmos o código usando funções simples, mas sem usar variáveis globais. Assim o código deve ter as seguintes funções:
+
+Função exibeOpcoes: imprime as opções, lê a escolha do usuário e retorna o valor inteiro da opção escolhida
+
+Função processaOpcoes: recebe como parâmetro as variáveis opcao e saldo e processa o valor de opcao para charmar as funções: deposito, saque ou saldo. A função também deve usar o retorno sa funções saque e deposito para atualizar o valor do saldo e retornar o valor do saldo atualizado depois das operações.
+
+Função saldo: recebe como parâmetro o valor do saldo e imprime seu valor.
+
+Função saque: recebe como parâmetro o valor do saldo, implementa a funcionalidade de saque e retorna o valor do saldo atualizado
+
+Função deposito: recebe como parâmetro o valor do saldo, implementa a funcionalidade de deposito e retorna do saldo atualizado
+
+Função principal: implementa o loop principal e chama as funcões exibeOpcoes e processaOpcoes. Essa função deve usar o valor de retorno da função exibeOpocoes para verificar se o usuário quer sair, antes de chamar a função processaOpcoes. Essa função deve também usar o retorno da função processaOpcoes para atualizar o valor da variável saldo.
+
+Com as implementações das funções o programa deve ficar assim:
+
+#funcao principal
+#funcao saldo
+#funcao depositio
+#funcao saque
+#funcao exibeOpcoes
+#funcao processaOpcoes
+
+
+def principal():
+opcao = 0
+saldo = 1000
+... resto da implementação da função principal
+
+principal()
+
+3) Escreva um programa que peça ao usuário um número inteiro N e depois um conjunto de N números. O programa deverá armazenar todos os números lidos numa lista, e então imprimir todos os números, classificando se cada número é primo ou não, no caso se não ser primo o programa também deve imprimir a lista de divisores do número.
+Para verificar se um número é primo ou não, escreva uma função que recebe um número inteiro como parâmetro e retorna à sua lista de divisores. Use o retorno da função para imprimir a saída do programa no formato abaixo:
+
+4) O exemplo abaixo mostra que o input() retorna o texto digitado pelo usuário e o split() atua sobre ele quebrando-o (separando-o) em partes. No exemplo, como o split() não recebe parâmetro algum, ele utiliza o espaço em branco como elemento separador.
+
+lista = input("digite os valores: ").split()
+print(lista) # se o usuário digitar "45 62 34 95", será gerada a lista ["45", "62", "34", "95"]
+
+O que o split() faz é buscar o elemento separador no texto e utilizar as posições em que ele se encontra como posição de separação, gerando uma lista de valores. Alguns algoritmos de Bioinformática realizam um procedimento semelhante, inclusive sobre listas numéricas. Faz-se uma busca de padrões sobre uma sequência e quebra-se a sequência em menores, sem o padrão utilizado. Por exemplo, realizar a quebra da sequência [ 2, 7, 3, 6, 1, 2, 3, 4, 8, 5 ] usando o 3 como elemento separador irá resultar nas subsequências [ 2, 7 ], [ 6, 1, 2 ] e [ 4, 8, 5 ].
+
+Implemente uma função semelhante ao split(), porém sobre listas numéricas. Sua função deve se chamar imprimePartes e receber dois parâmetros, a lista e o elemento separador. A função então deve imprimir as listas geradas durante o processo de quebra. Caso haja mais de uma ocorrência consecutiva do elemento separador, não devem ser geradas listas vazias. Por exemplo, na quebra da sequência [ 2, 7, 3, 3, 3, 3, 3, 4, 8, 5 ] pelo valor 3, apenas as sequências [ 2, 7 ] e [ 4, 8, 5 ] são geradas. O mesmo vale no caso do elemento separador se encontrar no início ou no final da sequência. Por exemplo, a quebra de [ 3, 3, 3, 4, 8, 5, 3, 3 ] irá gerar apenas a sequência [ 4, 8, 5 ].
+
+Escreva então um programa que lê do usuário um valor N, uma sequência numérica com N valores e o valor do separador. Use a função imprimePartes, para imprimir as partes resultantes da separação.
+
+5)Muitos algoritmos de I.A. e Aprendizagem de máquina precisam identificar padrões de informação. Um dos mecanismos desses algoritmos, chamados de classificadores, é agrupar dados similares, ou seja "próximos" uns dos outros. Uma informação pode ter várias propriedades (ou características). Por exemplo, uma pessoa pode ser representada pelo seu peso, idade, altura, índice de massa corpórea e assim por diante. Cada propriedade dessa é considerada uma "dimensão" na busca por "similaridade".
+
+Levando em conta apenas uma dimensão, o primeiro passo da tarefa de encontrar a similaridade (ou proximidade) de dados é encontrar, dentro de uma lista de valores, o par mais próximo um do outro, ou seja aquele cuja diferença é a menor possível. Por exemplo, o par mais próximo na lista [ 4, 9, 1, 7 ] é 9 e 7, que possui diferença de 2. Qualquer outro par de valores da lista terá uma diferença maior que 2.
+
+Escreva um programa que lê uma um número N seguido por uma lista de N valores e apresenta o par mais próximo. Mesmo que haja mais de um par igualmente próximo, basta apresentar um cuja diferença seja a mínima. No último exemplo de entrada e saída, há dois pares diferentes, mas apenas um é apresentado.
+
+Divida seu programa em pelo menos duas funções da seguinte forma:
+
+- Uma função deve ser usada para ler o valor de N e os N números, essa função deve retornar a lista de valores lidos
+- Uma função que recebe a lista de valores e retorna outra lista contendo o par mais próximo
+
+Usando as funções implementadas imprima a saída do programa.

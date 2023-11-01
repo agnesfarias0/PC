@@ -1,0 +1,70 @@
+1) Escreva um programa que calcule e exiba o Máximo Divisor Comum (MDC) de dois números inteiros inseridos pelo usuário.
+Digite o primeiro número inteiro: 24
+
+Digite o segundo número inteiro: 36
+
+O Máximo Divisor Comum (MDC) de 24 e 36 é: 12
+
+Digite o primeiro número inteiro: 48
+
+Digite o segundo número inteiro: 18
+
+O Máximo Divisor Comum (MDC) de 48 e 18 é: 6
+
+
+
+2) Desenvolva uma função que receba uma string e uma substring como entrada e determine se a substring está presente na string.
+
+Exemplos:
+
+Entrada
+
+string = "Olá, mundo!"
+
+substring = "mundo"
+
+Saída:
+
+A substring está presente na string.
+
+Entrada:
+
+string = "O céu está azul hoje"
+
+substring = "nublado"
+
+
+
+3) Crie uma função que receba um número inteiro N como entrada e retorne a soma de todos os múltiplos de 3 ou 5 menores que N. Se um número for múltiplo de ambos 3 e 5, conte-o apenas uma vez na soma.
+
+Exemplos:
+
+Entrada: N = 10 Saída: 23.
+
+Entrada: N = 20 Saída: 78.
+
+
+
+4) Desenvolva um programa que solicite ao usuário um número inteiro positivo e exiba a sequência de Collatz para esse número. A sequência é gerada da seguinte forma: se o número é par, divida-o por 2; se o número é ímpar, multiplique-o por 3 e adicione 1. Repita esse processo até que o número seja igual a 1.
+
+Exemplos:
+
+Digite um número inteiro positivo: 6 Sequência de Collatz para 6: 6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+
+Digite um número inteiro positivo: 13 Sequência de Collatz para 13: 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+
+
+
+5) Desenvolva uma função que receba um número inteiro positivo como entrada e determine se ele é um número narcisista. Um número narcisista é aquele cuja soma dos dígitos elevados à sua própria quantidade de dígitos resulta no próprio número.
+
+Entrada: 153
+
+Saída: É um número narcisista.
+
+Entrada: 9474
+
+Saída: É um número narcisista.
+
+Entrada: 123
+
+Saída: Não é um número narcisista.

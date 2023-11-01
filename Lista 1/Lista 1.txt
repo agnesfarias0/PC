@@ -1,0 +1,27 @@
+1) Escreva um programa que pede ao usuário 2 números decimais (float) A e B, e imprime o resultado das operações de adição, subtração, divisão, divisão inteira e resto entre A e B. No caso de operações entre números inteiros, como resto e divisão inteira, converta os números em inteiro antes de realizar as operações.
+
+2) Monte uma tabela-verdade com os valores de A AND B e A OR B por meio de um programa. Para isso, seu programa deve receber o valor booleano para as variáveis A e B e então imprimir na tela os valores respectivos para cada operação (AND e OR), como no exemplo.
+
+Dica: Associe os valores de 0 para False e 1 para True por meio de uma condicional.
+
+OBS.: Valores diferentes de 0 e 1 devem ser considerados inválidos.
+
+3) Escreva um programa que recebe do usuário dois textos, A e B, e imprime os resultados das operações tamanho(A) - tamanho(B), A + B, A contém B, B contém A, primeira letra de A, primeira letra de B, última letra de A, última letra de B.
+
+4) Escreva um programa que recebe dois textos do usuário e imprime o valor das expressões de acordo com os exemplos:
+
+1 - Texto A dividido em duas Partes: primeira_metade_texto(A) e segunda_metade_texto(A)
+2 - Texto B dividido em duas Partes: primeira_metade_texto(B) e segunda_metade_texto(B)
+3 - primeira_metade_texto(A) + segunda_metade_texto(B)
+4 - segunda_metade_texto(A) + primeira_metade_texto(B)
+5 - primeira_letra_texto(A) + segunda_letra_texto(B) + ultima_letra_texto(A) + ultima_letra_texto(B)
+
+5) Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+
+1 - o produto do dobro do primeiro com metade do segundo .
+2 - a soma do triplo do primeiro com o terceiro.
+3 - o terceiro elevado ao cubo.
+
+6) Faça um programa que transforme uma temperatura fornecida em Celsius para a correspondente em Fahrenheit.
+
+A formula de conversão de Celsius para Fahrenheit é a seguinte: C=(5/9)*(F– 32).

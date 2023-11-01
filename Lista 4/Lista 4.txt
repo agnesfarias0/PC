@@ -1,0 +1,36 @@
+1) Escreva um programa que lê a quantidade dos alunos de uma turma. Em seguida, o programa deve ler os nomes de cada aluno e imprimi-los na ordem inversa.
+
+2) Crie um programa que lê um valor numérico N e que em seguida lê N números. Armazene esses números em uma lista. Em seguida, leia do usuário 3 números inteiros (OP, A e B). O primeiro número (OP) representa uma operação matemática (0 é soma, 1 é multiplicação) que deve ser realizada em cima dos dois números cujas posições (1 a N) na lista são A e B. O programa deve então apresentar a operação e seu resultado.
+
+3) Em uma turma de alunos que conversavam muito, um professor montou a seguinte estratégia. Após os alunos se sentarem, ele mandava os alunos trocarem de lugar. Para ajudar esse processo, crie um programa para ajudar esse professor. O programa deve ler um valor N, que representa a quantidade de alunos. Em seguida, deve ler os nomes de cada aluno. Considere a sequência lida como a ordem das cadeiras dos alunos. O programa deve então imprimir os nomes em uma nova ordem, trocando os alunos sentados em cadeiras de número par (o da primeira cadeira par vai para a última par, o da segunda para a antepenúltima, etc.).
+Se houver uma quantidade ímpar de cadeiras pares (em uma turma de 7 alunos, vão haver 3 cadeiras pares), o aluno da cadeira central não terá seu local trocado.
+
+4) Um treinador de voleibol gostaria de manter estatísticas sobre sua equipe. A cada jogo, seu auxiliar anota quantas tentativas de saques, bloqueios e ataques cada um de seus jogadores fez, bem como quantos desses saques, bloqueios e ataques tiveram sucesso (resultaram em pontos). Seu programa deve mostrar qual o percentual de saques, bloqueios e ataques do time todo tiveram sucesso.
+
+Formato de entrada
+A primeira entrada é o número de jogadores N (N >= 1). Em seguida, para cada jogador, deve-se se ler uma linha com as seguintes informações: nome do jogador, os valores S, B e A, representam a quantidade de tentativas de saques, bloqueios e ataques; os valores S1, B1 e A1, representando o número de saques, bloqueios e ataques deste jogador que tiveram sucesso.
+
+Formato de saída
+A saída deve mostrar o percentual total de saques, bloqueios e ataques do time todo que resultaram em pontos, conforme mostrado no exemplo.
+
+5) Para analisar dados coletados (amostras) por estudos científicos, é bastante comum o uso de boxplots, elementos gráficos que exibem os seguintes dados sobre uma amostra:
+
+- limite superior
+- limite inferior
+- 1º quartil (valor que se encontra na posição 1/4 do conjunto, considerando o conjunto em ordem crescente)
+- 2o quartil/mediana (valor que se encontra na metade do conjunto, considerando o conjunto em ordem crescente)
+- 3º quartil (valor que se encontra na posição 3/4 do conjunto, considerando o conjunto em ordem crescente)
+
+Veja uma ilustração de Boxplot em:
+https://www.monolitonimbus.com.br/wp-content/uploads/2019/11/boxplot_vert.png
+
+Nesse contexto, crie um programa que lê um conjunto de N números (N > 2). Para isso, o programa deve primeiro ler o valor de N e depois a lista de N números reais (float). Os dados devem ser informados na ordem crescente, ou seja, do menor valor para o maior, podendo haver elementos repetidos. Em seguida, o programa deve realizar a análise dos dados mostrando as informações presentes em um boxplot (limite inferior, o 1º quartil, a mediana, o 3º quartil e o limite superior), considerando o seguinte:
+Em qualquer iteração do laço de leitura dos N valores, se o valor lido for menor que o anterior, exiba a mensagem:
+"Erro! Conjunto tem de estar em ordem crescente"
+E pare o programa.
+
+
+- O 1º quartil é o valor na i-ésima posição, onde i == round(N * 1/4).
+- O 3º quartil é o valor na i-ésima posição, onde i == round(N * 3/4).
+- A mediana é o elemento central dos dados. Há, porém, dois casos para o "centro". Se N for ímpar, haverá um único "elemento do meio" (ex: em [1, 3, 5], 3 é central), mas se N for par haverá dois "elementos do meio" (ex: em [1, 3, 4, 6], 3 e 4 são centrais). Nesse caso, a mediana será a média dos dois valores do meio.
+- Como os dados são informados de maneira ordenada, seus valores mínimos e máximos seriam naturalmente considerados como os limites inferior e superior. Porém, o boxplot não considera valores extremos (outliers) como limites. Um valor é considerado extremo se ele está afastado da mediada por mais de 1,5 o valor do intervalo interquartílico (Terceiro Quartil – Primeiro Quartil).
